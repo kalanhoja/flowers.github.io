@@ -1,0 +1,11 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.image-styles {
+    width: 30rem;
+    border: 5px solid black;
+}
