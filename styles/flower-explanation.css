@@ -1,11 +1,24 @@
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+   max-width: 800px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .image-styles {
     width: 30rem;
     border: 5px solid black;
+}
+
+.flower-description {
+    margin: 70px 0;
+    font-size: 1.5rem;
 }

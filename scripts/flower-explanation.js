@@ -8,10 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (flowerName) {
         $("#flower-image").attr('src', "images/" + flowerName + ".jpg");
         // Add paragraph logic here too if needed
+        let flowerExplanation = document.getElementsByClassName("flower-description")[0];
+  
+        for(let i = 0; i < flowersData.length; i++) {
+            if (flowersData[i].hasOwnProperty(flowerName)) {
+                flowerExplanation.innerHTML = flowersData[i][flowerName]
+                break;
+            }
+            else {
+                flowerExplanation.innerHTML = "Sorry, we don't have an explanation for this flower yet. Please check back later!"
+            }
+        }
     }
 });
 
 
 
-let flowerExplanation = document.getElementsByClassName("flower-description")[0];
-flowerExplanation.innerHTML = flowersData[0]['rose']
