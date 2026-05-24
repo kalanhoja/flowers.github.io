@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 const anchor = document.createElement('a');
                 anchor.href = "flower-explanation.html"; // Target Page 2 URL
                 anchor.className = 'flower-name';
+                anchor.target = "_blank"; // Open in a new tab
 
                 // Create the bold element inside the anchor
                 const strong = document.createElement('strong');
