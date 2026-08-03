@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kalanhoja.github.io/flowers.github.io/sitemap.xml
